@@ -38,7 +38,7 @@ Run npm install from the terminal to install all required dependencies. Subseque
 # Mode of operation
 ![alt text](public/screenshot.png "Screenshot")
 
-This app requires a server running with a socket.io connection. The link can be found at
+This app requires a server running with a socket.io connection. The link can be found at https://github.com/sakthivenkat93/cartloop_chatapp_back_end
 
 Upon screen load, type in the username and press connect. This will initiate a socket connection to the server.
 Post that any message entered in the text section below can be sent via clicking the send message button.
