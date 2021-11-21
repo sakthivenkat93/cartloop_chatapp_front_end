@@ -1,0 +1,207 @@
+body {
+  background-color: #e5e5e5;
+}
+
+
+.App {
+ text-align: center;
+    border-radius: 5px;
+    width: 60%;
+    min-height: 80vh;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    background: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+}
+
+.userinput {
+  border: unset;
+    outline: unset;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    height: 25px;
+    margin: 5px;
+    background: #f6f6f6;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 13px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.inputbutton {
+  border: unset;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    outline: unset;
+}
+
+.appsection {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.messagelist {
+  max-height: 62vh;
+    display: flex;
+    flex-flow: column;
+    min-height: 60vh;
+}
+
+.messagecontainer {
+  text-align: unset;
+  overflow: hidden;
+}
+
+.messagesectioncontainer{
+  overflow-y: auto;
+}
+
+.messagesectionheader{
+  border-bottom: solid 1px lightgray;
+  /* overflow: hidden; */
+  /* height: 50px; */
+}
+
+.messagesectionheadertitle{
+  float: left;
+  margin: 5px;
+  margin-left: 15px;
+  color: gray;
+  font-size: 13px;
+}
+
+.messagesectionheadermenucontainer{
+  float: right;
+  margin: 5px;
+  margin-right: 15px;
+}
+
+.username {
+  text-align: left;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.message {
+  margin: 5px;
+    float: left;
+    margin-left: 15px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.username.sender {
+  text-align: right !important;
+  margin-right: 15px;
+}
+
+.message.sender {
+  float: right;
+  background-color: #e75818;
+  color: white;
+  margin-right: 15px;
+}
+
+.messageinputsection {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 1px lightgrey;
+  margin: 7px;
+  overflow: hidden;
+}
+
+.messageinputsectionseparator {
+  border-bottom: solid 1px lightgray;
+    border-top: unset;
+    width: 96%;
+}
+
+.messageinput {
+    border: unset;
+      outline: unset;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      max-height: 50px;
+      margin: 5px;
+      border-radius: 5px;
+      text-align: left;
+      font-size: 13px;
+      padding: 5px;
+      padding-left: 15px;
+      margin-top: 10px;
+      overflow-y: auto;
+}
+
+.addiconcontainer{
+  text-align: left;
+  margin-left: 25px;
+}
+
+.macroheader {
+  overflow: hidden;
+}
+
+.macroheadertitle {
+  float: left;
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+.macroheaderdropdownicon {
+  float: right;
+  margin-right: 15px;
+}
+
+.macro {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 1px lightgrey;
+  margin: 7px;
+  overflow: hidden;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.macrosection {
+  height: 83vh;
+}
+
+.messageappsection {
+  float: left;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+}
+
+.selectedMacro {
+  border: solid 1px #e75818;;
+}
+
+@media only screen and (max-width: 1148px) {
+  .messageappsection {
+    float: unset;
+    width: unset;
+  }
+
+  .macrosection {
+    height: unset;
+  }
+
+  .messagelist {
+    min-height: unset;
+    max-height: 45vh;
+  }
+}
